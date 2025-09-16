@@ -17,12 +17,12 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git (
-                    branch: 'main', 
-                    changelog: false, 
-                    poll: false, 
-                    url: 'https://github.com/ohadgu/kodekloud-jenkins-hello-world.git'
-                )
+                // git (
+                //     branch: 'main', 
+                //     changelog: false, 
+                //     poll: false, 
+                //     url: 'https://github.com/ohadgu/kodekloud-jenkins-hello-world.git'
+                // )
 
                 // Run Maven package CMD
                 sh "mvn clean package -DskipTests=true"
