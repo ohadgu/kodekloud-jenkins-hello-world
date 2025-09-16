@@ -32,7 +32,7 @@ pipeline {
         stage ('Unit Test') {
             steps {
                 script {
-                    for (int i = 0; i < 60; i++) {
+                    for (int i = 0; i < 2; i++) {
                         echo "${i + 1}"
                         sleep 1
                     }
